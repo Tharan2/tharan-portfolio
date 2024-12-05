@@ -349,3 +349,35 @@ footer a {
 footer a:hover {
     color: #007BFF;
 }
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: #181818;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+}
+
+@media (max-width: 600px) {
+    .project-grid {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .skills-icons {
+        flex-wrap: wrap;
+    }
+}
